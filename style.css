@@ -8,8 +8,23 @@
 }
 
 .large-card{
-    width: 292px;
+    width: 250;
     height: 480px;
-    
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
   
 }
+footer{
+    height: 350px;
+    justify-content: center;
+}
+.copyright{
+    justify-content: center;
+    color: white;
+}
+.apple-icone{
+   font-size: 50px;
+}
+
