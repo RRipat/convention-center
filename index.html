@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap css link  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- script js  -->
+    <script>
+      $(function(){
+        $('.toast').toast();
+      });
+    </script>
     
 </head>
 <body> 
@@ -18,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
             <div class="container">
-                <a class="navbar-brand" href="#"><span class="navbar-brand mb-0 h1 fs-4">Kutumbari Community Center</span></a>
+                <a class="navbar-brand" href="#"><span class="navbar-brand mb-0 h1 fs-4">Shapa Community Center</span></a>
                 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -97,23 +103,33 @@
            
         </section>
   </header>
-    <!-- main area  -->
+            <!-- main area  -->
     <main>
-        <!-- bonuse point area -->
+        <!---------------------
+           bonuse point area 
+           -------------------->
       <section  class="container mb-5">  
-        <!-- <div class="alert alert-warning alert-dismissible fade show h25" role="alert">
-          Hello, world! This is a toast message.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div> -->
-        <!-- seciond toast  -->
-        <div class="toast align-items-center d-block text-white  bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="d-flex">
-            <div class="toast-body">
-              Hello, world! This is a toast message.
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast show" aria-label="Close"></button>
+        
+        <!---------------
+           toast option  
+           -------------->
+
+        <div class="toast show ms-auto" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header ">
+            <strong class="me-auto">Paradise it world</strong>
+  
+            <small >30 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+              
+            </button>
           </div>
-        </div> 
+          <div class="toast-body bg-primary text-white">
+            paradise it world is my best it center of 
+          </div>
+        </div>  
+    
+          
+        
         <div class="row mt-5 d-flex gx-5 my-5 justify-content-center align-items-center ">
                
                     <div class="col-lg-6 col-sm-12 col-md-12">
@@ -183,7 +199,7 @@
                   
                     <!-- large card  -->
                     
-                    <div class="card-body bg-primary text-white rounded-3 large-card p-4 ">
+                    <div class="card-body bg-primary text-white rounded-3 large-card me-3 ">
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger  fw-bold">
                             Hot
                             <span class="visually-hidden">unread messages</span>
@@ -297,7 +313,10 @@
                
             </div>
         </section>
-              <!-- third section subscribe button area -->
+              <!-----------------------------------
+                third section subscribe button area 
+                -------------------------------------->
+
         <section  style="background-color: #FEE1F3; height: 300px;" class="container  d-flex justify-content-center align-items-center text-center bg-info-background rounded-3 my-5" id="subscribe">
           <div>
             <h1>PLEASE SUBSCRIBE NOW</h1>
@@ -309,55 +328,68 @@
 
     </main>
     <!-- footer area  -->
-    <footer class="bg-dark d-flex align-items-center justify-content-around col-sm-12">
-
-
-        <div class="copyright">
-            <p>© 2020 bike. All rights reserved</p>
-        </div>
-        <div class="     ">
+    <footer class= "d-flex align-items-center   ">
+        
+      <!-----------------
+         footer area
+    ------------------>
+        <div class="container d-flex justify-content-around align-items-center flex-column flex-sm-column-reverse flex-md-row">
+          <div class="col-lg-6">
+            <small>
+              © 2020 bike. All rights reserved
+            </small>
+          </div>
+          <div class="icons col-lg-6">
+            <h4>Get the App</h4>
+            <a target="blank" href="https://www.apple.com/app-store/">
+              <img class="mb-2 w-25" src="icons/apple.jpg" alt="">
+            </a>
             
-                <h4 class="text-white">Get the App</h4>
-                <div class="d-flex">
-                    
+            <div>
+              <a target="blank" href="https://play.google.com/store/apps/details?id=com.shohoz.tracer&amp;gclid=CjwKCAiAlrSPBhBaEiwAuLSDUC563g0QRpLoKLgLj7rD-yOwWQMQXJEiFtOjYEvTxsc729j4ewbjIBoCx9wQAvD_BwE">
+                <img class="w-25"  src="icons/google-play.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+  </footer>
+
+    <!-- <footer class="bg-dark container d-flex justify-content-between align-items-center flex-column flex-sm-column-reverse flex-md-row  ">
+        <div class="container">
+          <div class="row d-flex ">
+            <div class="copyright col-sm-12 col-lg-6 w-100 justify-content-between align-items-center">
+            <p class="text-white">© 2020 bike. All rights reserved</p>
+          </div>
+          <div class="col-sm-12 col-lg-6 justify-content-between align-items-center">
+            
+          <h4 class="text-white">Get the App</h4>
+                <div class="">
+                  
                    
-                        <button class="d-flex align-items-center btn btn-dark border rounded-3 border-light w-100 gy-0 lh-1"> <div class="me-2">
+                        <button class="d-flex align-items-center btn btn-dark border rounded-3 border-light  gy-0 lh-1"> <div class="me-2">
                             <i class="apple-icone align-items-center fab fa-apple"></i>
                         </div> <a class="text-decoration-none text-white" href="https://www.apple.com/"><div>
-                            <span> Download on the</span> <span class="fs-3 fw-bold"><br> App Store</span>
+                            <span> Download on the</span> <span class="fs-5 fw-bold"><br> App Store</span>
                          </div></a> </button>
                     
                 </div>
-                <div class="d-flex">
+                <div class="">
                     
                    
-                        <button class="d-flex mt-3 align-items-center btn btn-dark border rounded-3 border-light w-100 gy-0 lh-1">  <div  class="me-2"> <img  src="icons/playstore.png" alt="">
+                        <button class="d-flex mt-3 align-items-center btn btn-dark border rounded-3 border-light  gy-0 lh-1">  <div  class="me-2"> <img  src="icons/playstore.png" alt="">
                             
-                        </div> <a class="text-decoration-none text-white" href="https://play.google.com/store/apps"> <span> Get it on</span> <span class="fs-3 fw-bold"><br> Google Play</span></a> <div>
+                        </div> <a class="text-decoration-none text-white" href="https://play.google.com/store/apps"> <span> Get it on</span> <span class="fs-5 fw-bold"><br> Google Play</span></a> <div>
                            
                         </div></button>
                     
                 </div>
                
             
+          </div>
         </div>
-
-        <!-- <div class="row  ">
-            <div class="row row-cols-2 ">
-                <div class="col-lg-6 ">
-                  <div class="">
-                    <p class="text-white justify-content-center align-items-center">© 2022 bike. All rights reserved</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                    <p class="text-white">© 2022 bike. All rights reserved</p>
-                </div>
-                
-              </div>
-         
-            
-        </div> -->
-    </footer>
+        </div>
+    </footer> -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
